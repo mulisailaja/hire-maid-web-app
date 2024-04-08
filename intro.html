@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Maid</title>
+    <link rel="shortcut icon" type="image/x-icon" href="admin/images/image 9.png" style="margin-top: 20px; margin-left: 20px;">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            font-size: 17px;
+            overflow-x: hidden;
+        }
+        .header {
+  overflow: hidden;
+  background-color: #165069;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+    margin-right: 166px;
+    font-family: cursive;
+}
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+    
+  }
+}
+
+     
+#myVideo {
+  position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 50vh;/* Adjust this value to your desired height */
+}
+
+        .content {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            color: #f1f1f1;
+            width: 92%;
+            padding: 88px 504px;
+            margin: 0px 0px 100px 79px;
+        }
+
+        .content h1 {
+            font-size: 2.5em;
+            margin-bottom: 27px;
+            margin-left: 77px;
+        }
+
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .myBtn {
+            display: inline-block;
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+            margin-right: 10px;
+            text-align: center;
+            text-decoration: none;
+        
+        }
+        a:hover {
+  background-color: white;
+  color: #000;
+}
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 20px;
+                margin: 0;
+            }
+        }
+
+        .content p{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    margin-left: -191px;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 150% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+.column {
+    float: left;
+    width: 23.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+    margin: 9px;
+}
+
+.containerTab {
+  padding: 20px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+   width: 70%;
+    padding: 10px;
+    margin-left: 700px;
+ 
+}
+
+/* Add a card effect for articles */
+/* .card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+} */
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  background-color: #165069;
+  .footer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1280px;
+  width: 95%;
+  background: #10182F;
+  border-radius: 6px;
+}
+}
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-left: 58px;
+}
+.footer-col .links {
+  margin-top: 20px;
+}
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+.footer-col .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+.footer-col .links li a:hover {
+  color: #000;
+}
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6 ;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+.footer-col input::placeholder {
+  color: #ccc;
+}
+ .footer-col form button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.footer-col form button:hover {
+  background: #cecccc;
+}
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+.footer-col .icons i {
+  color: #afb6c7;
+}
+.footer-col .icons i:hover  {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 0;
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer-col form {
+    display: block;
+  }
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+    </style>
+</head>
+<body>
+   
+       
+        <div class="header">
+            <img src="uploads/logo-no-background.png" style=" vertical-align: middle;
+            border-style: none;
+            width: 85px;
+            height: 92px;
+            margin-top: -17px;
+            margin-left: 72px;
+            "> <a href="#default" class="logo"></a>
+              <div class="header-right">
+                <a  href="customerlogin.html">CUSTOMER</a>
+                <a href="maid\login.php">MAID</a>
+                <a href="admin\login.php" >ADMIN</a>
+              </div>
+            </div>
+          
+            <div class="iphone-pro-max">
+                <video autoplay muted loop id="myVideo">
+                    <source src="clean.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video> 
+           
+             
+              <div class="content">
+                  <h1>HIRE MAID</h1>
+                  <p>Quick and quality services from house cleaning...</p>
+                  <!-- <a class="myBtn" href="admin\login.php" style="margin-left: 73px;margin-top: 36px;">Admin</a>
+                  <a class="myBtn" href="customerlogin.html" style="margin-top: 30px;
+                  margin-left: 73px;">Customer</a>
+                              <a class="myBtn" href="maid\login.php" style="margin-left: 73px;margin-top: 36px;">Maid</a> -->
+                            </div>
+      
+                             
+            
+        
+              <div style="text-align:center">
+                  <h2>Most Popular Services</h2>
+                  <p></p>
+                </div>
+                
+                <!-- Three columns -->
+                <div class="row">
+                  <div class="column" onclick="openTab('b1');" style="background:#165069;">
+                    Cooking
+                  </div>
+                  <div class="column" onclick="openTab('b2');" style="background:#165069;">
+                    Laundry
+                  </div>
+                  <div class="column" onclick="openTab('b3');" style="background:#165069;">
+                    Deep Cleaning
+                  </div>
+                  <div class="column" onclick="openTab('b4');" style="background:#165069;">
+                    Kitchen Cleaning
+                  </div>
+                </div>
+                
+                <!-- Full-width columns: (hidden by default) -->
+                <div id="b1" class="containerTab" style="display:none;background:lightslategray">
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                  <h2> Cooking</h2>
+                  <p>"Never underestimate the power of Good Food made by Our Maids.Eating delicious food can be a life changing experience."</p>
+                </div>
+                
+                <div id="b2" class="containerTab" style="display:none;background:lightslategray">
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                  <h2>  Laundry</h2>
+                  <p>"LAUNDRY By The Bag come drop off your dirty laundry and get your laundry done right with our clean,fresh and fast service."</p>
+                </div>
+                
+                <div id="b3" class="containerTab" style="display:none;background:lightslategray">
+                  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                  <h2> Deep Cleaning</h2>
+                  <p>"We Dream Of Having A Clean House - But Who Dreams Of Actually Doing The Cleaning? everything possible with Our Maids."</p>
+                </div>
+                <div id="b4" class="containerTab" style="display:none;background:lightslategray">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <h2> Kitchen Cleaning</h2>
+                    <p>"A Kitchen is a good place to be,almost always the best place in the house so make it hygiene and keep the kitchen clean to maintain healthy and happy life all will be made possible by our home services."</p>
+                  </div>
+                
+                <script>
+                function openTab(tabName) {
+                  var i, x;
+                  x = document.getElementsByClassName("containerTab");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                  }
+                  document.getElementById(tabName).style.display = "block";
+                }
+                </script>
+                
+      
+              
+         
+           
+        </div>
+          <br>
+
+        <div class="row" style="background: azure;">
+            <div class="leftcolumn">
+              <div class="card">
+                <h2 style="margin-left: 244px;
+                font-size: -webkit-xxx-large;
+                margin-bottom: -95px;">About Us</h2>
+                <h5></h5>
+                <img class="fakeimg" style=" height: 663px;" src="uploads/young-beautiful-girl-apron-holding-bucket-with-cleaning-tools-pointing-with-index-finger-it-smiling-confident.jpg" > 
+                
+                <p style="margin-left: 67px;
+                font-size: x-large;
+                font-weight: 600;">Quality Service:</p>
+               
+                <p style=" margin-left: 53px;
+                margin-top: -555px;
+                font-size: 29px;
+                background: #16506996;
+                font-family: cursive;
+                border-radius: 123px;
+                height: 284px;
+                text-align: center;
+                margin-right: 470px;"><br>Streamline the  process of hiring,<br>managing and  scheduling <br>domestic help,Making the task of <br> finding and coordinating with  <br>maids hassle free experience.</p>
+              
+                  <p style="margin-left: 203px;
+                  margin-top: 316px;
+                  font-family: cursive;
+                  font-size: larger;">Never underestimate the power of Good Food made by Our Maids.Eating delicious food can be a life changing experience.</p>
+                  <p style="margin-left: 203px;font-family: cursive;
+                  font-size: larger;" >Laundry by the bag come drop off your dirty laundry and get your laundry done right with our clean,fresh and fast service.</p>
+                  <p style="margin-left: 203px;font-family: cursive;
+                  font-size: larger;">We dream of having a clean house - but who dreams of actually doing the cleaning? everything possible with Our Maids.<br><br>A Kitchen is a good place to be,almost always the best place in the house so make it hygiene and keep the kitchen clean to maintain healthy and happy life all will be made possible by our home services.</p>
+              </div>
+              <!-- <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, Sep 2, 2017</h5>
+                <div class="fakeimg" style="height:200px;">Image</div>
+                <p>Some text..</p>
+                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+            </div> -->
+            <!-- <div class="rightcolumn">
+              <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+              </div>
+              <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div><br>
+                <div class="fakeimg">Image</div>
+              </div> -->
+              <!-- <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some text..</p>
+              </div> -->
+            </div>
+          </div>
+          
+          <section class="footer">
+            <div class="footer-row">
+              <div class="footer-col"style="margin-left: 99px;">
+                <h4>Info</h4>
+                <ul class="links">
+                  <li style="color:white"> Home </li>
+                                    <li style="color:white">Contact Us</li>
+                                    <li style="color:white">About Us</li>
+                                    <li style="color:white">Maid Hiring</li>
+                                    
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Hire Maid</h4>
+                <p>Streamline the  process of hiring,managing and scheduling domestic help,Making the task of finding and coordinating with maids hassle free experience.</p><?php $cnt=$cnt+1;}} ?>
+
+              </div>
+              <div class="footer-col" style="margin-left: -102px ">
+                <h4>Contact Info</h4>
+                <ul>
+                 
+               <p>Address :Tata santroni,korfos-101,chennai,Tamil Nadu.</p>
+                  
+            <p>Phone : 9550234318</p>
+          <p>Email : Sailusubbareddy333@gmail.com</p>                                </ul>
+              </div>
+              <!-- <div class="footer-col">
+                <h4>Newsletter</h4>
+                <p>
+                  Subscribe to our newsletter for a weekly dose
+                  of news, updates, helpful tips, and
+                  exclusive offers.
+                </p>
+                <form action="#">
+                  <input type="text" placeholder="Your email" required>
+                  <button type="submit">SUBSCRIBE</button>
+                </form>
+                <div class="icons">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-github"></i>
+                </div>
+              </div> -->
+            </div>
+          </section>
+          
+
+       
+    
+</body>
+</html>
+  
