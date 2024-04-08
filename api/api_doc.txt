@@ -1,0 +1,19 @@
+Login api
+---------
+
+http://localhost/Maid/mhms/api/login.php?email=sailu123@gmail.com&password=sailu&type=customer
+{"status":200,"message":"Success","data":{"logged_in":true,"uid":"7","username":"sailaja","useremail":"sailu123@gmail.com","user_mobile":"9550234318"}}
+
+SIGN UP API 
+-----------
+
+http://localhost/Maid/mhms/api/signup.php?user_email=hemath@gmail.com&user_password=hemath&user_name=hemath&user_phone=1234567894&type=customer
+{"status":200,"message":"Success"}
+
+GET CATEGORIES
+--------------
+
+http://localhost/Maid/mhms/api/categories.php
+{"status":200,"message":"Success","data":[{"id":"1","category_name":"Cooking","per_hour_amount":"200","monthly_amount":"3000"},{"id":"3","category_name":"House Keeping","per_hour_amount":"1000","monthly_amount":"4000"},{"id":"6","category_name":"Laundry","per_hour_amount":"500","monthly_amount":"5500"},{"id":"15","category_name":"Bathroom cleaning","per_hour_amount":"300","monthly_amount":"5000"},{"id":"16","category_name":"sweeping","per_hour_amount":"250","monthly_amount":"3500"},{"id":"17","category_name":"kitchen cleaning","per_hour_amount":"350","monthly_amount":"4000"},{"id":"18","category_name":"utensils cleaning","per_hour_amount":"350","monthly_amount":"4500"},{"id":"20","category_name":"mopping","per_hour_amount":"400","monthly_amount":"5000"},{"id":"21","category_name":"Baby care","per_hour_amount":"300","monthly_amount":"6000"},{"id":"22","category_name":"Deep cleaning","per_hour_amount":"1000","monthly_amount":"4000"},{"id":"23","category_name":"Ironing and Folding","per_hour_amount":"700","monthly_amount":"6500"}]}
+
+
